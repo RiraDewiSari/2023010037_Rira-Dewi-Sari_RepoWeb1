@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta nama="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h2>Form Pendaftaran Mahasiswa Baru Polibang</h2>
+    <form>
+        <div class="form-group">
+            Nama : 
+            <input type="text" id="nama" nama="nama" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email : </label>
+            <input type="email" id="email" nama="email" required>
+        </div>
+        <div class="form-group">
+            <label for="telepon">Nomor Telepon : </label>
+            <input type="tel" id="telepon" nama="telepon" required>
+        </div>
+        <div clas="form-group">
+            <label for="jk">Jenis Kelamin :</label>  
+            <input type="radio" id="laki-laki" nama="laki-laki"> Laki - Laki 
+            <input type="radio" id="perempuan" nama="perempuan"> Perempuan 
+        </div>
+        <div class="form-group">
+            <label for="alamat">Alamat : </label>
+            <input type="text" id="alamat" nama="alamat" required>
+        </div>
+        <div class="form-group">
+            <label for="jurusan">Pilihan Jurusan : </label>
+            <select id="jurusan" nama="jurusan" required>
+                <option value="">Pilih Jurusan</option>
+                <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
+                <option value="Administrasi Bisnis Internasional">Administrasi Bisnis Internasional</option>
+                <option value="Akuntansi Keuangan Publik">Akuntansi Keuangan Publik</option>
+            </select>
+        </div>
+        <label for="komentar">Harapan : </label> <br>
+        <textarea class="form-control border-0 mb-4" rows="10" cols="50" placeholder="Tambahkan Komentar"></textarea> 
+        <br>
+        <div class="form-group">
+            <input type="submit" value="Daftar">
+        </div>
+    </form>
+</body>
+</html>
