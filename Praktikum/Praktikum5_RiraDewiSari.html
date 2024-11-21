@@ -7,28 +7,26 @@
 </head>
 <body>
 <div>
-    <h1>Pendaftaran Mahasiswa</h1>
-    
+    <h1>Pendaftaran Mahasiswa Baru Polibang</h1>    
     <form >
         <label for="nama"> <b>Nama</b> :</label>
-        <input type="text"><br><br>
+        <input type="text" required> <br>
 
         <label for="gender"> <b>Gender</b> :</label>
         <input type="radio">
         <label for="laki-laki">Laki-Laki</label>
         <input type="radio">
-        <label for="Perempuan">Perempuan</label><br><br>
+        <label for="Perempuan">Perempuan</label> <br>
 
-        <label for="alamat"> <b>Alamat</b> </label> <br><br>
-        <label for="nama"> Rt/Rw :</label>
-        <input type="text"><br><br>
-        <label for="nama"> Kode Pos :</label>
-        <input type="text"><br><br>
-        <label for="nama"> Kecamatan :</label>
-        <input type="text"><br><br>
-        <label for="nama"> Kabupaten :</label>
-        <input type="text"><br><br>
-        
+        <dt><label for="alamat"> <b>Alamat</b></label></dt>
+        <dd><label for="nama"> Rt/Rw :</label>
+            <input type="text"  required> </dd>
+        <dd><label for="nama"> Kode Pos :</label>
+            <input type="text"  required>  </dd>
+        <dd><label for="nama"> Kecamatan :</label>
+            <input type="text"  required> </dd>
+        <dd><label for="nama"> Kabupaten :</label>
+            <input type="text"  required> </dd> <br>        
 
         <label for="negara"><b>Negara</b> :</label>
         <select id="negara" name="Listnegara">
@@ -37,18 +35,20 @@
             <option value="Malaysia">Malaysia</option>
             <option value="Singapura">Singapura</option>
             <option value="Timor Leste">Thailand</option>
-        </select>
-        <br><br>
+        </select> <br>
+
+        <label for="telepon"><b>No.Telepon</b> : </label>
+        <input type="tel" id="telepon" nama="telepon" required> <br>
 
         <label for="email"><b>Email</b> :</label>
-        <input type="email"><br><br>
+        <input type="email" required> <br>
 
         <label for="photol"><b>Photo</b> :</label>
-        <input type="file" placeholder="Tambahkan foto"><br><br>
+        <input type="file" placeholder="Tambahkan foto"> <br>
 
-        <label for="komentar"><b>Komentar</b> :</label><br>
+        <label for="komentar"><b>Harapan</b> :</label><br>
         <textarea class="form-control border-0 mb-4" rows="10" cols="50" placeholder="Masukkan Komentar"></textarea> <br>
-        <button class="form-control btn" type="submit">Kirim</button>
+        <button class="form-control btn" type="submit">Daftar</button>
     </form>
 </div>
 </body>

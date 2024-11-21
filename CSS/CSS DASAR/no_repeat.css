@@ -1,0 +1,5 @@
+body {
+    background-repeat: repeat-y;
+    background-image: url("image/book.jpg");  
+    background-size: 100%;
+} 
