@@ -1,0 +1,406 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the header */
+.header {
+  background-color: #ffffff;
+  text-align: center;
+  background-image: url(image/header.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 70px;
+  padding-top: 20px;
+}
+
+.header h1 {
+  color: chocolate;
+}
+
+body {
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff428;
+}
+
+.topnav {
+  overflow: hidden;
+  margin-left: 30.55%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #fb8107;
+  color: white;
+}
+.topnav a.split {
+  float: right;
+  background-color: #fb8107;
+  color: white;
+}
+
+.active {
+  background-color: #fb8107;
+  color: white;
+}
+
+
+
+/* Home page */
+.home {
+  background-image: url(image/wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 100px;
+}
+
+.column.middle {
+  text-align: center;
+  color: brown;
+  padding: 100px;
+  font-size: x-large;
+}
+
+/* List menu */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 200px;
+}
+
+/* Background */
+.listmakanan,
+.listminuman {
+  background-image: url(image/listmenu.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* Profile Section */
+.profile-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparan */
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  margin: 50px auto;
+  color: #fff;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profile-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* Profile Photo */
+.profile-photo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.profile-photo img {
+  width: 250px;
+  height: 250px;
+  border-radius: 15px;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+/* Profile Content */
+.profile-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Biografi, CV, and Education Section */
+.bio, .cv, .education {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparan */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bio:hover, .cv:hover, .education:hover {
+  background: rgba(255, 255, 255, 0.2); /* Lebih cerah saat hover */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.bio h2, .cv h2, .education h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #fb8107;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.bio p, .cv p, .education ul li {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #fefefe;
+}
+
+.education ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.education ul li {
+  font-size: 1.1rem;
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 15px;
+  color: #fefefe;
+}
+
+.education ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fdfd96;
+  font-size: 1.5rem;
+}
+
+.education ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .profile-photo img {
+    width: 300px; 
+    height: 300px; 
+    border-radius: 15px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+
+  .profile-content {
+    width: 100%;
+  }
+}
+
+
+
+
+.appetizer,
+.maincourse,
+.dessert {
+  background-image: url(image/eat.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* Grid container */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Card styling */
+.card {
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #9ABF80;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) rotate(2deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.card p {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #000; /* Warna font hitam */
+}
+
+/* Pop-up modal */
+.popup-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-modal:target {
+  display: flex;
+}
+
+.popup-content {
+  background: rgba(154, 191, 128, 0.9); /* Warna hijau transparan */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+  float: right;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ff4500;
+}
+
+/* Footer */
+.footer {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font: 25px;
+  font-size: 15px;
+  box-shadow: 0px 0px 25px rgb(207, 207, 207);
+  width: 100%;
+}
+
+.foot {
+  display: inline-block;
+  line-height: 20px;
+  vertical-align: top;
+  margin: 5px;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 600px) {
+  .column.side,
+  .column.middle {
+      width: 100%;
+  }
+}
+
+/* Additional button styling */
+.flex-container > div > button {
+  margin: 20px;
+  font-size: 20px;
+  display: inline-block;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-color: #ffffffb6;
+  box-shadow: 5px 5px #888888;
+  border-radius: 10px;
+  background-color: #ffeb51;
+}
+
+.flex-container button:hover {
+  background-color: #fb8107;
+}
+
+.flex-container a:hover {
+  color: #ffffff;
+}
+
+.flex-container button a {
+  text-decoration: none;
+  color: #1500ff;
+  font-family: 'sans-serif';
+}
+
+/* Appetizer animation */
+.appetizer {
+  padding: 40px;
+  text-align: center;
+  animation: slideIn 2s ease;
+}
+
+/* Dessert animation */
+.dessert {
+  padding: 40px;
+  text-align: center;
+  animation: slideIn 2s ease;
+}
+
+/* main_course */
+.main-course{
+  padding: 40px;
+  text-align: center;
+  animation: slideIn 2s ease;
+}
+
+
+.content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #ddd;
+}
+
+.resep-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.resep-button:hover {
+  background-color: #ff4500;
+}

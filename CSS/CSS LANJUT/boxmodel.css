@@ -1,0 +1,18 @@
+.box_merah {
+    width: 300px; 
+    height: 100px; 
+    padding: 20px; 
+    border: 8px solid rgb(255, 0, 0); 
+    margin: 50px; 
+    background: url(image/header.jpg);
+    background-repeat: no-repeat;
+    background-size: 400px 150px;
+}
+.box_biru {
+    width: 300px;
+    height: 600px; 
+    padding: 0; 
+    border: 5px solid red; 
+    margin: 50px; 
+    background-color: pink;
+}
