@@ -70,6 +70,22 @@ body {
   font-size: x-large;
 }
 
+
+/* Picture */
+.picture {
+  background-image: url(image/wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 100px;
+}
+
+
+.picture .item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
 /* Profile Section */
 .profile {
   background-image: url(image/bg_profile.jpg);
@@ -194,6 +210,17 @@ body {
   padding: 200px;
 }
 
+.listminuman .flex-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 200px;
+}
+
+.listminuman .flex-container > div > button {
+  padding: 5px 40px;
+}
+
 /* Additional button styling */
 .flex-container > div > button {
   margin: 20px;
@@ -222,14 +249,23 @@ body {
 }
 
 /* appetizer, main course, dessert */
-.appetizer,
-.maincourse,
-.dessert {
+.appetizer {
   background-image: url(image/eat.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
+.main-course {
+  background-image: url(image/eat.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.dessert {
+  background-image: url(image/eat.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
 .content h2 {
   font-size: 2.5rem;
   margin: 10px;
@@ -252,6 +288,15 @@ body {
   justify-content: center;
   padding: 50px;
 }
+
+.grid-container-mix {
+  display: grid;  
+  grid-template-columns: auto auto auto;
+  gap: 40px;
+  justify-content: center;
+  padding: 50px;
+}
+
 
 /* Card styling */
 .card {
@@ -362,6 +407,10 @@ text-align: center;
   color: #555;
 }
 
+.footer a {
+  text-decoration: none;
+  color: black;
+}
 /* Responsive layout */
 @media screen and (max-width: 600px) {
   .column.middle {
