@@ -10,10 +10,19 @@
 
   /* Header/Blog Title */
 .header {
-  padding: 30px;
+  background-image: url(image/header.jpg);
+  background-size: 100% 100%;
   text-align: center;
-  background-image: url('image/header.jpg');
-  background-size: 730px 300px ;
+  color: #e0e0ff;  
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.head {
+  display: inline-block;
+  line-height: 20px;
+  vertical-align: top;
+  margin: 5px;
 }
 
   /* Style the top navigation bar */
@@ -34,10 +43,15 @@
   
   /* color on hover topnav */
   .topnav a:hover {
-    background-color: #ffff;
+    background-color: #849bffd3;
     color: #00008b;
   }
- 
+  
+  .active {
+    background-color: #849bffd3;
+    color: #00008b;
+  }
+
   /* Right column */
   .rightcolumn {   
     float: right;
